@@ -21,7 +21,10 @@
     <div class="container">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">我的心里话</h3>
+            <h3 class="panel-title">
+              {{wordsList.name}}
+              {{wordsList.words}}
+            </h3>
           </div>
           <div class="panel-body">
             <div class="words-pannel" v-for="item in wordsList">
@@ -33,9 +36,9 @@
                 </div>
                 <div class="media-body">
                   <h4 class="media-heading">
-                    {{ wordsList.name }}
+                    {{ item.name }}
                   </h4>
-                    {{ wordsList.words }}
+                    {{ item.words }}
                 </div>
               </div>
             </div>
